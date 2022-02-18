@@ -1,0 +1,133 @@
+.bannerHabilidades{
+    background-image: url(../imagenes/portadas/portada-servicios.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.presentacionHabilidades{
+    .presentacionHabilidades__redaccion{
+        .redaccion__img{
+            background-image: url(../imagenes/habilidades/redaccion.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 200px; 
+            padding: 20px;
+        }
+        .redaccion__textoRedaccion{
+            .redaccion__h2{
+                color: $violeta;
+                font-family: $font-montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2em;
+                text-align: left;
+                line-height: 1.5;
+            }
+            .redaccion__p{
+                color: $negro;
+                font-family: $font-raleway;
+                font-style: normal;
+                font-weight: 100;
+                font-size: 1em;
+                text-align: left;
+                line-height: 1.5;
+            }
+        }
+    }
+    .presentacionHabilidades__edicion{
+        .edicion__img{
+            background-image: url(../imagenes/habilidades/libro-correccion.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 200px; 
+            padding: 20px;
+            order: 2;
+        }
+        .edicion__textoEdicion{
+            order: 1;
+            .edicion__h2{
+                color: $violeta;
+                font-family: $font-montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2em;
+                text-align: left;
+                line-height: 1.5;
+            }
+            .edicion__p{
+                color: $negro;
+                font-family: $font-raleway;
+                font-style: normal;
+                font-weight: 100;
+                font-size: 1em;
+                text-align: left;
+                line-height: 1.5;
+            }
+        }
+    }
+    .presentacionHabilidades__fotografia{
+        .fotografia__img{
+            background-image: url(../imagenes/habilidades/fotografia.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 200px; 
+        }
+        .fotografia__textoFotografia{
+            .fotografia__h2{
+                color: $violeta;
+                font-family: $font-montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2em;
+                text-align: left;
+                line-height: 1.5;
+            }
+            .fotografia__p{
+                color: $negro;
+                font-family: $font-raleway;
+                font-style: normal;
+                font-weight: 100;
+                font-size: 1em;
+                text-align: left;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+.containerHerramientas{
+    padding: 0px;
+    margin: 0px;
+}
+
+.herramientas{
+    background-color: $naranja; 
+    .herramientas__h2{
+        color: $violeta;
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2em;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .herramientas__herramientaIcono{
+        .herramientas__img{
+            padding-left: 30%;
+            padding-right: 30%;
+            transition: all ease-out 0.5s;
+        }
+        .herramientas__img:hover{
+            transform: scale(1.1);
+        }
+        .herramientas__h5{
+            color: $negro;
+            font-family: $font-montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1em;
+            text-align: center;
+            line-height: 1.5;
+        }
+    }
+}

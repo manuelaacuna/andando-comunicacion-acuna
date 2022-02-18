@@ -1,0 +1,59 @@
+.bannerContacto{
+    background-image: url(../imagenes/portadas/portada-contacto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.formularioContacto{
+    fieldset{
+        border: solid $violeta 3px;
+        border-radius: 15px;
+        background-color: $arena;
+        label{
+            color: $negro;
+            font-family: $font-raleway;
+            font-weight: 100;
+            font-size: 1em;
+            text-align: left;
+            line-height: 1.5;
+        }
+        input{
+            display: inline-block;
+            background-color: $arena;
+            border-bottom: $violeta solid 0.2em;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-bottom: 25px;
+        }
+        input:focus{
+            outline: none;
+        }
+        .mensajeYBoton{
+            .labelMensaje{
+                color: $negro;
+                font-family: $font-raleway;
+                font-weight: 100;
+                font-size: 1em;
+                text-align: right;
+                line-height: 1.5;
+            }
+            textarea {
+                background-color: $arena;
+                border-bottom: $violeta;
+                border-bottom-style: solid;
+                color: $negro;
+                font-family: $font-raleway;
+                font-weight: 100;
+                font-size: 0.9em;
+                text-align: left;
+                line-height: 1.2;
+                margin-bottom: 15px;
+                transition: all 0.3s;
+            }
+            textarea:focus{
+                outline: none;
+            }
+        }
+    }
+}

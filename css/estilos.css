@@ -1,0 +1,808 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Raleway:wght@300;700&display=swap");
+/* 
+FONT FAMILYS
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif; 
+*/
+/* IMPORTADOS */
+.navbar {
+  background-color: #973a5e;
+  color: white;
+  width: 100%;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.navbar .navbar-expand-lg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .navbar-dark .nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0px 10px 0px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.navbar .navbar-dark .nav-link:hover {
+  border-bottom: white solid 2px;
+}
+
+.footer {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #220410), to(#973a5e));
+  background-image: linear-gradient(90deg, #220410 40%, #973a5e);
+  color: #ececec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+  padding: 20px 50px 10px 50px;
+}
+
+.footer h4 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 1.5;
+  padding: 10px 0px 10px 0px;
+}
+
+.footer .miniBiografia {
+  padding: 0px 10px 0px 10px;
+}
+
+.footer .miniBiografia p {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.footer .miniBiografia h3 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.footer .nuestrasOficinas {
+  padding: 0px 10px 0px 10px;
+  overflow: hidden;
+}
+
+.footer .seguime {
+  padding: 0px 10px 0px 10px;
+}
+
+.footer .seguime img {
+  padding-right: 20px;
+  -webkit-transition: ease-in .2s;
+  transition: ease-in .2s;
+}
+
+.footer .seguime img:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+}
+
+.copyright {
+  background-color: #ad607e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.copyright h3 {
+  color: #ececec;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.btn-prymary {
+  background-color: #973a5e;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3em;
+  line-height: 1.5;
+  border-radius: 7px;
+  border-style: hidden;
+  -webkit-transition: ease-in .2s;
+  transition: ease-in .2s;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ad607e;
+  color: #ececec;
+}
+
+.bannerSobreMi {
+  background-image: url(../imagenes/portadas/portada-nosotros.png);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.trayectoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trayectoria .trayectoria__h2 {
+  color: #973a5e;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.trayectoria .trayectoria__p {
+  color: #000000;
+  margin: 10px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.trayectoria .trayectoria__quoteTrayectoria {
+  border: 3px solid #f69579;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #f69579;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.miMision {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f69579;
+}
+
+.miMision .miMision__miMisionContenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.miMision .miMision__h2 {
+  color: #973a5e;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.miMision .miMision__img {
+  background-image: url(../imagenes/sobremi/miMisionIlustracion.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.miMision .miMisionTexto__p {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+/* Mandamientos */
+.mandamientos {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mandamientos .alineacionCarrusel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mandamientos .mandamientos__h2 {
+  color: #973a5e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.mandamientos .mandamientos__mandamiento1 {
+  display: inline-block;
+  margin-bottom: 50px;
+  border: 3px #973a5e solid;
+  padding: 15px;
+  width: 80%;
+  margin: 10px;
+}
+
+.mandamientos .mandamientos__mandamiento1 .mandamientos__p {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  line-height: 1.5;
+  text-align: center;
+  display: block;
+  margin: 15px;
+}
+
+.mandamientos .carousel-item {
+  text-align: center;
+}
+
+.mandamientos .carousel-indicators li {
+  background-color: #f69579;
+  border-radius: 20px;
+  height: 5px;
+}
+
+.mandamientos .carousel-control-next {
+  margin-left: 50px;
+}
+
+.mandamientos .carousel-control-prev {
+  margin-right: 50px;
+}
+
+.bannerHabilidades {
+  background-image: url(../imagenes/portadas/portada-servicios.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.presentacionHabilidades .presentacionHabilidades__redaccion .redaccion__img {
+  background-image: url(../imagenes/habilidades/redaccion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+}
+
+.presentacionHabilidades .presentacionHabilidades__redaccion .redaccion__textoRedaccion .redaccion__h2 {
+  color: #973a5e;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.presentacionHabilidades .presentacionHabilidades__redaccion .redaccion__textoRedaccion .redaccion__p {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.presentacionHabilidades .presentacionHabilidades__edicion .edicion__img {
+  background-image: url(../imagenes/habilidades/libro-correccion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.presentacionHabilidades .presentacionHabilidades__edicion .edicion__textoEdicion {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.presentacionHabilidades .presentacionHabilidades__edicion .edicion__textoEdicion .edicion__h2 {
+  color: #973a5e;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.presentacionHabilidades .presentacionHabilidades__edicion .edicion__textoEdicion .edicion__p {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.presentacionHabilidades .presentacionHabilidades__fotografia .fotografia__img {
+  background-image: url(../imagenes/habilidades/fotografia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.presentacionHabilidades .presentacionHabilidades__fotografia .fotografia__textoFotografia .fotografia__h2 {
+  color: #973a5e;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.presentacionHabilidades .presentacionHabilidades__fotografia .fotografia__textoFotografia .fotografia__p {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.containerHerramientas {
+  padding: 0px;
+  margin: 0px;
+}
+
+.herramientas {
+  background-color: #f69579;
+}
+
+.herramientas .herramientas__h2 {
+  color: #973a5e;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.herramientas .herramientas__herramientaIcono .herramientas__img {
+  padding-left: 30%;
+  padding-right: 30%;
+  -webkit-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+}
+
+.herramientas .herramientas__herramientaIcono .herramientas__img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.herramientas .herramientas__herramientaIcono .herramientas__h5 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.bannerResenas {
+  background-image: url(../imagenes/portadas/portada-novedades.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contenidoResenas .articulo1 .imagenArticulo1 {
+  background-image: url(../imagenes/reseñas/cine.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.contenidoResenas .articulo1 .imagenArticulo2 {
+  background-image: url(../imagenes/reseñas/conferencia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.contenidoResenas .articulo1 .imagenArticulo3 {
+  background-image: url(../imagenes/reseñas/libro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.contenidoResenas .articulo1 .textoResenas h3 {
+  color: #973a5e;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.contenidoResenas .articulo1 .textoResenas p {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.top5 {
+  background-color: #f69579;
+  border-radius: 15px;
+}
+
+.top5 .top5Contenido h3 {
+  color: #973a5e;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.top5 .top5Contenido ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding: 0px 15px 0px 15px;
+}
+
+.top5 .top5Contenido ol li {
+  padding-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.top5 .top5Contenido p {
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.bannerContacto {
+  background-image: url(../imagenes/portadas/portada-contacto.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.formularioContacto fieldset {
+  border: solid #973a5e 3px;
+  border-radius: 15px;
+  background-color: #fac5a4;
+}
+
+.formularioContacto fieldset label {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.formularioContacto fieldset input {
+  display: inline-block;
+  background-color: #fac5a4;
+  border-bottom: #973a5e solid 0.2em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 25px;
+}
+
+.formularioContacto fieldset input:focus {
+  outline: none;
+}
+
+.formularioContacto fieldset .mensajeYBoton .labelMensaje {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: right;
+  line-height: 1.5;
+}
+
+.formularioContacto fieldset .mensajeYBoton textarea {
+  background-color: #fac5a4;
+  border-bottom: #973a5e;
+  border-bottom-style: solid;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 0.9em;
+  text-align: left;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.formularioContacto fieldset .mensajeYBoton textarea:focus {
+  outline: none;
+}
+
+.bannerPrincipal {
+  background-image: url(../imagenes/portadas/portada-andando.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
+.andamosComunicando h2 {
+  color: #973a5e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.andamosComunicando p {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.videoPrincipal {
+  padding: 10px;
+  height: 100%;
+}
+
+.trabajos {
+  margin-top: 50px;
+}
+
+.trabajos h2 {
+  color: #973a5e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  padding: 10px;
+}
+
+.trabajos .fotosTrabajos .trabajo1 img {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.trabajos .fotosTrabajos .trabajo1 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border-radius: 10px;
+}
+
+.trabajos .trabajo1 h3 {
+  color: #f69579;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+/* Experiencia */
+.experiencia {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.experiencia .alineacionCarrusel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.experiencia .experienciaOpinion {
+  display: inline-block;
+  margin-bottom: 50px;
+  border: 3px #973a5e solid;
+  padding: 15px;
+  width: 75%;
+}
+
+.experiencia .experienciaOpinion p {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  line-height: 1.5;
+  text-align: center;
+  display: block;
+  margin: 15px;
+}
+
+.experiencia .experienciaOpinion img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+.experiencia .carousel-item {
+  text-align: center;
+}
+
+.experiencia h2 {
+  color: #973a5e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.experiencia .carousel-indicators li {
+  background-color: #f69579;
+  border-radius: 20px;
+  height: 5px;
+}
+
+.experiencia .carousel-control-next {
+  margin-left: 50px;
+}
+
+.experiencia .carousel-control-prev {
+  margin-right: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffdb;
+}
+
+/* Este formato aplica para todos los títulos de los banner principales de cada página */
+.tituloDePagina {
+  margin: 0px 20px 70px 50px;
+  padding: 20px;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.tituloDePagina h1 {
+  color: #f69579;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5em;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-top: 70px;
+}
+
+.tituloDePagina h3 {
+  color: #ad607e;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 380px) {
+  .tituloDePagina h1 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .tituloDePagina h1 {
+    font-size: 1.5em;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
