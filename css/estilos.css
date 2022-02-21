@@ -77,7 +77,7 @@ font-family: 'Raleway', sans-serif;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 50px;
-  padding: 20px 50px 10px 50px;
+  padding: 10px;
 }
 
 .footer h4 {
@@ -91,7 +91,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .footer .miniBiografia {
-  padding: 0px 10px 0px 10px;
+  padding: 1em;
 }
 
 .footer .miniBiografia p {
@@ -113,12 +113,12 @@ font-family: 'Raleway', sans-serif;
 }
 
 .footer .nuestrasOficinas {
-  padding: 0px 10px 0px 10px;
+  padding: 1em;
   overflow: hidden;
 }
 
 .footer .seguime {
-  padding: 0px 10px 0px 10px;
+  padding: 1em;
 }
 
 .footer .seguime img {
@@ -774,14 +774,23 @@ font-family: 'Raleway', sans-serif;
 }
 
 body {
-  background-color: #ffffdb;
+  background-color: #f1f1f1;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
 }
 
 /* Este formato aplica para todos los títulos de los banner principales de cada página */
 .tituloDePagina {
-  margin: 0px 20px 70px 50px;
+  margin: 0px 20px 70px 20px;
   padding: 20px;
-  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -801,6 +810,8 @@ body {
   text-transform: uppercase;
   line-height: 1.5;
   margin-top: 70px;
+  -webkit-filter: drop-shadow(5px 5px 10px white);
+          filter: drop-shadow(5px 5px 10px white);
 }
 
 .tituloDePagina h3 {
@@ -810,6 +821,8 @@ body {
   font-size: 1.5em;
   text-align: left;
   line-height: 1.5;
+  -webkit-filter: drop-shadow(5px 5px 10px white);
+          filter: drop-shadow(5px 5px 10px white);
 }
 
 @media only screen and (max-width: 460px) {

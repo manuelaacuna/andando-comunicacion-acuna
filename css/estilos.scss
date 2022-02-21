@@ -12,7 +12,7 @@ $violeta: #973a5e;
 $violeta-degrade: linear-gradient(90deg, #220410 40%,#973a5e); 
 $violeta-claro: #ad607e;
 $naranja:#f69579;
-$amarillo-fondo: #ffffdb;
+$amarillo-fondo: #f1f1f1;
 $blanco: #ececec;
 $arena: #fac5a4;
 $negro: #000000;
@@ -40,12 +40,19 @@ $font-montserrat: 'Montserrat', sans-serif;
 body {
     background-color: $amarillo-fondo;
 }
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
 
 /* Este formato aplica para todos los títulos de los banner principales de cada página */
 .tituloDePagina{
-    margin: 0px 20px 70px 50px;
+    margin: 0px 20px 70px 20px;
     padding: 20px;
-    width: 30%;
     display: flex;
     flex-flow: column nowrap;
     h1{
@@ -58,6 +65,7 @@ body {
         text-transform: uppercase;
         line-height: 1.5;
         margin-top: 70px;
+        filter: drop-shadow(5px 5px 10px rgb(255, 255, 255));
     }
     h3{
         color: $violeta-claro;
@@ -66,6 +74,7 @@ body {
         font-size: 1.5em;
         text-align: left;
         line-height: 1.5;
+        filter: drop-shadow(5px 5px 10px rgb(255, 255, 255));
     }
 }
 @media only screen and (max-width:460px){
