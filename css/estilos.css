@@ -16,6 +16,8 @@ font-family: 'Raleway', sans-serif;
   font-size: 1.2em;
   text-transform: uppercase;
   text-align: right;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .navbar .navbar-expand-lg {
@@ -31,16 +33,33 @@ font-family: 'Raleway', sans-serif;
           justify-content: space-between;
 }
 
-.navbar .navbar-dark .nav-link {
+.navbar .nav-link {
   color: white;
   text-decoration: none;
-  padding: 10px 0px 10px 0px;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  padding: 10px 5px 0px 5px;
+  display: inline-block;
+  position: relative;
+  margin: 5px;
 }
 
-.navbar .navbar-dark .nav-link:hover {
-  border-bottom: white solid 2px;
+.navbar .nav-link:after {
+  content: "";
+  position: absolute;
+  background-color: #ececec;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ececec;
+}
+
+.navbar .nav-link:hover:after {
+  width: 100%;
 }
 
 .footer {
