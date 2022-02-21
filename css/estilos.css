@@ -515,8 +515,10 @@ font-family: 'Raleway', sans-serif;
 }
 
 .top5 {
-  background-color: #f69579;
+  background-color: #fff;
   border-radius: 15px;
+  -webkit-box-shadow: inset -4px -4px 7px #ececec, inset 3px 3px 5px #a1a1a1;
+          box-shadow: inset -4px -4px 7px #ececec, inset 3px 3px 5px #a1a1a1;
 }
 
 .top5 .top5Contenido h3 {
@@ -561,9 +563,10 @@ font-family: 'Raleway', sans-serif;
 }
 
 .formularioContacto fieldset {
-  border: solid #973a5e 3px;
+  background-color: white;
   border-radius: 15px;
-  background-color: #fac5a4;
+  -webkit-box-shadow: -4px -4px 7px #ececec, 3px 3px 5px #a1a1a1;
+          box-shadow: -4px -4px 7px #ececec, 3px 3px 5px #a1a1a1;
 }
 
 .formularioContacto fieldset label {
@@ -577,7 +580,7 @@ font-family: 'Raleway', sans-serif;
 
 .formularioContacto fieldset input {
   display: inline-block;
-  background-color: #fac5a4;
+  background-color: white;
   border-bottom: #973a5e solid 0.2em;
   border-top: none;
   border-left: none;
@@ -599,7 +602,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .formularioContacto fieldset .mensajeYBoton textarea {
-  background-color: #fac5a4;
+  background-color: white;
   border-bottom: #973a5e;
   border-bottom-style: solid;
   color: #000000;
@@ -615,6 +618,31 @@ font-family: 'Raleway', sans-serif;
 
 .formularioContacto fieldset .mensajeYBoton textarea:focus {
   outline: none;
+}
+
+.formularioContacto fieldset .mensajeYBoton .botonEnviar {
+  background-color: #973a5e;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+  border-radius: 100px;
+  border-style: hidden;
+  width: 8em;
+  height: 2.5em;
+  -webkit-transition: ease-in .2s;
+  transition: ease-in .2s;
+}
+
+.formularioContacto fieldset .mensajeYBoton .botonEnviar:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+  color: #ececec;
+  font-weight: 600;
 }
 
 .bannerPrincipal {

@@ -48,8 +48,9 @@
     }
 }
 .top5{
-    background-color: $naranja;
+    background-color: #fff;
     border-radius: 15px;
+    box-shadow: inset -4px -4px 7px $blanco, inset 3px 3px 5px rgb(161, 161, 161);
     .top5Contenido{
         h3{
         color: $violeta;
