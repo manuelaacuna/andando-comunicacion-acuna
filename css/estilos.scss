@@ -23,12 +23,13 @@ $font-montserrat: 'Montserrat', sans-serif;
 /* IMPORTADOS */
 @import "header";
 @import "footer";
-@import "botones";
 @import "sobremi";
 @import "habilidades";
 @import "resenas";
 @import "contacto";
 @import "inicio";
+@import "botones";
+
 
 // Generales
 *{
@@ -39,14 +40,6 @@ $font-montserrat: 'Montserrat', sans-serif;
 
 body {
     background-color: $amarillo-fondo;
-}
-.container-fluid{
-    margin: 0;
-    padding: 0;
-}
-.row{
-    margin: 0;
-    padding: 0;
 }
 
 /* Este formato aplica para todos los títulos de los banner principales de cada página */
