@@ -335,12 +335,17 @@ font-family: 'Raleway', sans-serif;
   background-size: cover;
 }
 
+.presentacionHabilidades {
+  margin-top: 70px;
+}
+
 .presentacionHabilidades .presentacionHabilidades__redaccion .redaccion__img {
   background-image: url(../imagenes/habilidades/redaccion.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
   padding: 20px;
+  margin-bottom: 70px;
 }
 
 .presentacionHabilidades .presentacionHabilidades__redaccion .redaccion__textoRedaccion .redaccion__h2 {
@@ -372,6 +377,7 @@ font-family: 'Raleway', sans-serif;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  margin-bottom: 70px;
 }
 
 .presentacionHabilidades .presentacionHabilidades__edicion .edicion__textoEdicion {
@@ -405,6 +411,7 @@ font-family: 'Raleway', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
+  margin-bottom: 70px;
 }
 
 .presentacionHabilidades .presentacionHabilidades__fotografia .fotografia__textoFotografia .fotografia__h2 {
@@ -429,7 +436,8 @@ font-family: 'Raleway', sans-serif;
 
 .containerHerramientas {
   padding: 0px;
-  margin: 0px;
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
 
 .herramientas {
@@ -444,6 +452,7 @@ font-family: 'Raleway', sans-serif;
   font-size: 2em;
   text-align: center;
   line-height: 1.5;
+  margin-bottom: 50px;
 }
 
 .herramientas .herramientas__herramientaIcono .herramientas__img {

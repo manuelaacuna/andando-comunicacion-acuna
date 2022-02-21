@@ -5,6 +5,7 @@
     background-size: cover;
 }
 .presentacionHabilidades{
+    margin-top: 70px;
     .presentacionHabilidades__redaccion{
         .redaccion__img{
             background-image: url(../imagenes/habilidades/redaccion.jpg);
@@ -12,6 +13,7 @@
             background-repeat: no-repeat;
             height: 200px; 
             padding: 20px;
+            margin-bottom: 70px;
         }
         .redaccion__textoRedaccion{
             .redaccion__h2{
@@ -42,6 +44,7 @@
             height: 200px; 
             padding: 20px;
             order: 2;
+            margin-bottom: 70px;
         }
         .edicion__textoEdicion{
             order: 1;
@@ -71,6 +74,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             height: 200px; 
+            margin-bottom: 70px;
         }
         .fotografia__textoFotografia{
             .fotografia__h2{
@@ -97,7 +101,8 @@
 
 .containerHerramientas{
     padding: 0px;
-    margin: 0px;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 .herramientas{
@@ -110,6 +115,7 @@
         font-size: 2em;
         text-align: center;
         line-height: 1.5;
+        margin-bottom: 50px;
     }
     .herramientas__herramientaIcono{
         .herramientas__img{
