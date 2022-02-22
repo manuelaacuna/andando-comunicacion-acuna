@@ -331,8 +331,9 @@ font-family: 'Raleway', sans-serif;
 .bannerHabilidades {
   background-image: url(../imagenes/portadas/portada-servicios.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top right;
   background-size: cover;
+  height: 500px;
 }
 
 .presentacionHabilidades {
@@ -480,8 +481,9 @@ font-family: 'Raleway', sans-serif;
 .bannerResenas {
   background-image: url(../imagenes/portadas/portada-novedades.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top right;
   background-size: cover;
+  height: 500px;
 }
 
 .contenidoResenas .articulo1 .imagenArticulo1 {
@@ -575,8 +577,9 @@ font-family: 'Raleway', sans-serif;
 .bannerContacto {
   background-image: url(../imagenes/portadas/portada-contacto.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top right;
   background-size: cover;
+  height: 500px;
 }
 
 .formularioContacto fieldset {
@@ -882,7 +885,7 @@ body {
           filter: drop-shadow(5px 5px 10px white);
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 500px) {
   .tituloDePagina h1 {
     font-size: 1.3em;
   }
@@ -890,7 +893,7 @@ body {
 
 @media only screen and (max-width: 320px) {
   .tituloDePagina h1 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
