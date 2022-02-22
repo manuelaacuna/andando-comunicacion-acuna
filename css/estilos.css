@@ -489,6 +489,8 @@ font-family: 'Raleway', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
+  min-width: 200px;
+  padding-top: 0px;
 }
 
 .contenidoResenas .articulo1 .imagenArticulo2 {
@@ -496,6 +498,8 @@ font-family: 'Raleway', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
+  min-width: 200px;
+  padding-top: 0px;
 }
 
 .contenidoResenas .articulo1 .imagenArticulo3 {
@@ -503,6 +507,8 @@ font-family: 'Raleway', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
+  min-width: 200px;
+  padding-top: 0px;
 }
 
 .contenidoResenas .articulo1 .textoResenas h3 {
